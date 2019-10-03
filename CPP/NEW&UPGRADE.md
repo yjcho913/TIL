@@ -3,8 +3,6 @@
 - 학습 기간 : 2019.09.30 ~ 2019.10.04
 - 개요
   - upgrade & new
-  - class
-  - 
 
 ## 1. Upgrade & New
 
