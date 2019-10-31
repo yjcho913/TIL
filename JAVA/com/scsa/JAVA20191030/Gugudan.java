@@ -1,6 +1,8 @@
 package com.scsa.JAVA20191030;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 /*
 1. Gugudan.java
@@ -22,34 +24,31 @@ import java.io.IOException;
  */
 
 public class Gugudan {
-	int inputDan() throws IOException {
-		int dan;
+	
+	String con;
+	int dan;
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	
+	public int inputDan() throws IOException {
 		
 		System.out.print("원하는 단? ");
-		dan = System.in.read() - '0';
-		System.in.read();
-		System.in.read();
+		dan = Integer.parseInt(br.readLine());
 		System.out.println();
 		
 		return dan;
 	}
 	
-	void outputDan(int dan) {
+	public void outputDan(int dan) {
 		for(int i=1; i<=9; i++) {
 			System.out.println(dan+"*"+i+"="+(dan*i));
 		}
 		System.out.println();
 	}
 	
-	char continueDan() throws IOException {
-		char con;
-		
+	public String continueDan() throws IOException {
 		System.out.print("계속(y/n)? ");
-		con = (char)System.in.read();
-		System.in.read();
-		System.in.read();
+		con = br.readLine();
 		System.out.println();
-
 		return con;
 	}
 }

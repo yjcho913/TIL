@@ -39,6 +39,7 @@ public class AbstractClassTest {
 	public static void main(String[] args) {
 		// Shape s = new Rectangle();
 		// "자식은 부모다!", 자식은 부모로 형변환 가능
+		// Shape 인자 메소드 하나로, Rectangle, Circle, Triangle 모두 처리 가능
 		drawTest(new Rectangle());
 		drawTest(new Circle());
 		drawTest(new Triangle());

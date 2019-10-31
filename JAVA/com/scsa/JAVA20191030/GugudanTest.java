@@ -42,7 +42,7 @@ public class GugudanTest {
 		while(true) {
 			dan = gugudan.inputDan();
 			gugudan.outputDan(dan);
-			if(gugudan.continueDan() == 'n') break;
+			if(gugudan.continueDan().contentEquals("n")) break;
 		}
 		System.out.println(" -- END --");
 	}
