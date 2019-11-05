@@ -7,7 +7,10 @@ package com.scsa.JAVA20191104;
 	  - public 게터메소드, 세터메소드
 */
 
+// 일반적으로 public class MemberVO로 정의하기도 함
 public class Member {
+	// 서로 관련있는 속성 정의
+
 	private int no;
 	private String name;
 	private int age;
@@ -16,13 +19,19 @@ public class Member {
 	public Member() {};
 
 	public Member(int no, String name, int age, String job) {
-		super();
+		super();	// 컴파일러가 자동 추가
 		this.no = no;
 		this.name = name;
 		this.age = age;
 		this.job = job;
 	}
 	
+	
+	@Override
+	public String toString() {
+		return no + ": [" + name + "," + age + "," + job + "]";
+	}
+
 	public int getNo() {
 		return no;
 	}

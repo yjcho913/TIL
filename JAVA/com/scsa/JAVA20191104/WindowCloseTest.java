@@ -3,7 +3,6 @@ package com.scsa.JAVA20191104;
 import java.awt.Frame;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
-import java.awt.event.WindowStateListener;
 
 // 우측 상단의 x 버튼 클릭 ---> 프로그램 종료
 // WindowListener

@@ -12,16 +12,20 @@ import java.util.Iterator;
 	                        insert  select  update  delete
 	                      (create   find    modify   remove )
 */
+
 public class MemberMenu {
+	// CRUD 정의
+	// MEMORY(FIELD), FILE SYSTEM, DATABASE에 데이터 저장!
+	
 	ArrayList<Member> members;
-	int no;
+	static int no;
 	
 	public MemberMenu(){
 		members = new ArrayList<Member>();
 		no = 0;
 	}
-	void create(String name, int age, String job) {
-		members.add(new Member(++no, name, age, job));
+	void create(Member m) {
+		members.add(m);
 	}
 	
 	void find() {
@@ -32,9 +36,12 @@ public class MemberMenu {
 		System.out.println("#멤버 목록");
 		Iterator<Member> iter = members.iterator();
 		while(iter.hasNext()) {
-			Member member = iter.next();
-			System.out.println(member.getNo() + ": [" + member.getName() + "," + member.getAge() + "," + member.getJob() + "]");
+			System.out.println(iter.next());
 		}
+		
+//		for(Member m : members) {
+//			System.out.println(m);
+//		}
 	}
 	
 	void modify(int no, int age, String job) {

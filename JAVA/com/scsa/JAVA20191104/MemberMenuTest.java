@@ -78,14 +78,19 @@ import java.io.InputStreamReader;
 	-- END --
 */
 
-public class MemberMenuTest {
-	/*
-		PersonMenuTest.java  ---> main()
-	  - 반복적인 메뉴출력
-	  - ArrayList에 추가할 사람정보, 수정할 번호와 사람정보, 삭제할 번호의 입력을 받는다.
-	  - 선택된 번호에 따라 PersonMenu의 메소드를 호출.
-	*/
+/*
+PersonMenuTest.java  ---> main()
+- 반복적인 메뉴출력
+- ArrayList에 추가할 사람정보, 수정할 번호와 사람정보, 삭제할 번호의 입력을 받는다.
+- 선택된 번호에 따라 PersonMenu의 메소드를 호출.
+*/
 
+public class MemberMenuTest {
+	// main()메소드 정의
+	// main()메소드가 정의된 java클래스를 JavaApplication이라고 함
+	// 화면 출력, 콘솔 입력
+	// 메뉴에 대한 선택 - 기능 요청
+	
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
 		MemberMenu menu = new MemberMenu();
@@ -100,6 +105,8 @@ public class MemberMenuTest {
 			System.out.println("<멤버 메뉴>");
 			System.out.println("1.추가 2.검색 3.수정 4.삭제 5.종료");
 			System.out.print("번호입력==> ");
+			// JAVA 7버전부터 String도 switch문에서 비교 가능
+			// parseInt 대신 String으로 받아도됨
 			num = Integer.parseInt(in.readLine());
 			System.out.println();
 			
@@ -114,7 +121,8 @@ public class MemberMenuTest {
 				age = Integer.parseInt(in.readLine());
 				System.out.print("직업: ");
 				job = in.readLine();
-				menu.create(name, age, job);
+				Member mem = new Member(++(MemberMenu.no), name, age, job);
+				menu.create(mem);
 				break;
 			case 2: 
 				menu.find();
