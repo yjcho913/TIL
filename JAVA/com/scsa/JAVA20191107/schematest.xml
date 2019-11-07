@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="http://www.example.org/my_schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/my_schema my_schema.xsd ">
+  <su>1</su>
+  <su>2</su>
+  <su>3</su>
+  <su>4</su>
+  <su>5</su>
+  <jumin>900000-1234567</jumin>
+  <cupSize>small</cupSize>
+</root>

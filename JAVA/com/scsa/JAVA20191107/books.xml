@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- books.xml -->
+<books a = "10" b="20" c='30'>
+	<book>
+		<title>c언어</title>
+		<author>홍길동</author>
+		<price>15000</price>
+	</book>	
+	<book>
+		<title>LinuxServer</title>
+		<author>김철수</author>
+		<price>25000</price>
+	</book>	
+	<book>
+		<title>JavaProgramming</title>
+		<author>이영희</author>
+		<price>26000</price>
+	</book>	
+	<book>
+		<title>XMLBible</title>
+		<author>박민수</author>
+		<price>19000</price>
+	</book>
+	<!-- 나주석 -->
+</books>
+<!-- 너주석 -->

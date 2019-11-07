@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- DTD(문서 규칙) : 문서에서 사용할 태그와 속성 정의
+				       태그의 순서, 반복 횟수 정의
+	** 반복 횟수 표현 부호 **
+	* : 0 ~ 무한
+	+ : 1 ~ 무한
+	? : 0, 1
+	부호없음 : 1
+	
+	** 자식 요소들을 기술할 때 들어가는 부호 **
+	, : sequence (순서대로 포함)
+	| : choice (그 중에 하나만 선택)
+ -->
+ 
+ <!DOCTYPE persons [
+ 	<!ELEMENT persons (person+)>
+ 	<!ELEMENT person (name, age, job)>
+ 	<!ELEMENT name (#PCDATA)>
+ 	<!ELEMENT age (#PCDATA)>
+ 	<!ELEMENT job (#PCDATA)>
+ 	<!ATTLIST persons a 	 CDATA 		#REQUIRED
+ 					  b 	 ID 		#IMPLIED	
+ 					  c		 CDATA		#FIXED "30"
+ 					  gender (남성|여성) 	"여성" >
+ ]>
+ 
+<!-- persons Schema(문서 규칙) -->
+<persons a="10" b="b20" c="30" gender="여성">
+	<person>
+		<name>홍길동</name>
+		<age>13</age>
+		<job>학생</job>
+	</person>
+	<person>
+		<name>가나다</name>
+		<age>15</age>
+		<job>학생</job>
+	</person>
+</persons>
