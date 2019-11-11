@@ -164,9 +164,5 @@
   - Scrollbar 조절바를 움직였을 때
   - TextField에 글자를 썼을 때
   - Frame 우측상단의 x 버튼을 눌렀을 때
-- 
 
 <br>
-
-### ) Problems
-

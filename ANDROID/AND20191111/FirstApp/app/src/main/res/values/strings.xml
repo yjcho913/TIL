@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="A1CallBut">A1 CALL</string>
+    <string name="A2CallBut">A2 CALL</string>
+    <string name="A3CallBut">A3 CALL</string>
+    <string name="MainCall">MAIN CALL</string>
+</resources>
