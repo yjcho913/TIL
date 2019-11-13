@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestMemo</string>
+    <string name="addMemo">메모 추가</string>
+    <string name="title">TITLE</string>
+    <string name="content">CONTENT</string>
+    <string name="date">DATE</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+</resources>

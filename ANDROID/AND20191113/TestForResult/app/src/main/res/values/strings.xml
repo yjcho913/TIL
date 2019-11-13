@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TestForResult</string>
+    <string name="editBut">EDIT</string>
+    <string name="saveBut">SAVE</string>
+    <string name="cancelBut">CANCEL</string>
+</resources>
