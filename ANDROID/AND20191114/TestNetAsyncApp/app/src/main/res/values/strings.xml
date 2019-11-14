@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestNetAsyncApp</string>
+    <string name="searchBut">SEARCH</string>
+    <string name="search">SEARCH</string>
+</resources>
